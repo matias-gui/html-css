@@ -1,0 +1,32 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap');
+
+body {
+    text-align: justify;
+     font: normal 300 1em Libre Baskerville;
+     background-image: linear-gradient(to right, #A9D9D0, #F2E7DC);
+
+}
+
+
+h1 {
+    font-family: 'Libre Baskerville' serif  ;
+    font-weight: 200;
+    font-size: 3em;
+    font-style: italic;
+    text-shadow: 1px 1px 3px #f2e7dcea ;
+}
+h2 {
+    font: italic 200 1.6em Libre Baskerville;
+    text-shadow: 1px 2px 3px #f2e7dcea;
+}
+main {
+    background-color:white;
+    padding: 11px;
+    width: 400px;
+    margin: auto ;
+    border-radius: 50px;
+    box-shadow: 10px 10px 15px #0d0d0d8c;
+    
+}

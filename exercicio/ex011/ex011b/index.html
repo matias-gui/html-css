@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem </title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Teste de imagem com tamanho de tela diferentes</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagem/testep.png" type="image/png">
+        <source media="(max-width:1000px )" srcset="imagem/testem.png" type="image/png">
+        <img src="imagem/testeg.png" alt="paisagem">
+    </picture>
+    <h1>Adicionando Audio</h1>
+    <p>Vamos adicionar audio em nosso site </p>
+    <audio preload="metadata" controls>
+        <source src="midia/Spanish Moss - Chris Haugen.mp3" type="audio/mpeg">
+        <source src="midia/Spanish Moss - Chris Haugen.ogg" type="audio/ogg">
+        <source src="midia/Spanish Moss - Chris Haugen.wav" type="audio/wav">
+        <p>Infelizmente seu navegador seu navegador não tem suporte para reproduzir audio, faça o download do Mp3<a href="midia/Spanish Moss - Chris Haugen.mp3">Clique aqui</a></p>
+    </audio>
+    <!--Formatos de audio MP3 WAV-->
+</body>
+</html>

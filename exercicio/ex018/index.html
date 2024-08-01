@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div {
+        display:inline-block ;
+        background-color: aquamarine;
+        width: 200px;
+        height: 200px;
+        border: 1px solid rgba(41, 134, 146, 0.818);
+
+    }
+     
+    div:hover {
+        background-color: beige;
+    }
+    #n1 > p {
+        display: none;
+    }
+
+    #n1:hover  > p {
+        display: block;
+    }
+    #circulo {
+        background-image: linear-gradient(to right, #4C4A59,#1B7F7A);
+        width: 400px;
+        height:200px;
+       padding: 30px;
+       margin: 100px;
+       border: transparent;
+       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
+       display:  inline-table;
+       text-align: justify;
+    }
+    #circulo > p {
+        display: none;
+        color: #F2CDAC;
+    }
+    #circulo:hover > p {
+        display: block;
+
+    }
+    #menu {
+        width: 50px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 15px ;
+       background-color: #1B7F7A;
+       box-shadow: 1px 1px 5px #186d69d2 ;
+       color: #F2CDAC;
+       text-shadow: 1px 1px 5px #4c4a599d;
+    }
+   #menu > ol {
+    display: none;
+    color: #4C4A59;
+   }
+   #menu:hover > ol{
+    display: block;
+    text-align: left;
+   }
+   
+
+
+    </style>
+</head>
+<body>
+    <div id="n1">1</div>
+    <div id="n2">2 </div>
+    <div id="n3">3</div>
+<br>
+<hr>
+<div id="circulo">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo corporis quod eligendi omnis quo eaque ad rerum vero nesciunt quibusdam vel fugit corrupti ex animi, modi mollitia! Vel, ipsam perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quo iusto velit illum laborum delectus molestias, eius dolorem laudantium impedit consectetur, vitae commodi. Harum in laborum, cumque temporibus delectus aperiam.
+    </p> 
+   
+</div>
+<hr>
+<div id="menu">MENU
+   <ol  >
+    <li>FOTOS</li>
+    <li>VIDEOS</li>
+    <li>MUSICAS</li>
+   </ol>
+</div>
+</body>
+</html>
