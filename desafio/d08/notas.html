@@ -7,11 +7,29 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-color: rgba(255, 255, 255, 0.582);
+            background-color: rgba(251, 251, 251, 0.364);
+        }
+        h1{
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-top: 35px;
+        }
+        div{
+            overflow: auto;
         }
         table{
+            margin: auto;
+            margin-top: 50px;
             width: 600px;
             border-collapse: collapse;
+        }
+        caption{
+            background-color: #fbf9f9fc;
+            padding: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 1.3em;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.24);
         }
         thead{
             background-color: rgba(0, 0, 0, 0.601);
@@ -31,78 +49,86 @@
         .nota{
             text-align: center;
         }
+        td.media{
+            text-align: center;
+        }
       
     </style>
 </head>
 <body>
-
-    <table>
-        <caption>
-            Notas do Semestre para Lançar
-        </caption>
-        <thead>
-            <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplinas</th>
-                <th colspan="2" rowspan="1">Notas</th>
-                <th rowspan="2">Média</th>
-            </tr>
-            <tr>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th rowspan="4">Exatas</th>
-                <td>Matemática</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-            </tr>
-            <tr>
-                <td>Física</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-            </tr>
-            <tr>
-                <td>Química</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-            </tr>
-            <tr>
-                <td>Biologia</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-            </tr>
-            <tr>
-                <th colspan="4" class="media">Média de Exatas</th>
-                <td class="media">0.0</td>
-            </tr>
-            <tr>
-                <th rowspan="2">Humanas</th>
-                <td>História</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-            </tr>
-            <tr>
-                <td>Geografia</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-            </tr>
-            <tr>
-                <th colspan="4" class="media">Média de Humanas</th>
-                <td class="media">0.0</td>
-            </tr>
-
-        </tbody>
-
-    </table>
+    <h1>
+        Desafio do Curso em Video
+    </h1>
+<div>
+    
+        <table>
+            <caption>
+                Notas do Semestre para Lançar
+            </caption>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col">Área</th>
+                    <th rowspan="2" scope="col">Disciplinas</th>
+                    <th colspan="2" rowspan="1" scope="rowgroup">Notas</th>
+                    <th rowspan="2" scope="">Média</th>
+                </tr>
+                <tr>
+                    <th scope="col">Nota 1</th>
+                    <th scope="col">Nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4" scope="rowgroup">Exatas</th>
+                    <td>Matemática</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <th colspan="4" class="media" scope="row">Média de Exatas</th>
+                    <td class="media">0.0</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Humanas</th>
+                    <td>História</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <th colspan="4" class="media" scope="row">Média de Humanas</th>
+                    <td class="media">0.0</td>
+                </tr>
+    
+            </tbody>
+    
+        </table>
+</div>
     
 </body>
 </html>
