@@ -3,62 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Redes Sociais</title>
+    <title>Projeto Redes Sociais </title>
     <style>
+        *{
+            margin: 0px;
+        }
         body {
             height: 97vh;
-            max-width: 900px;
-            min-width: 400px;
-            background-color: rgba(0, 0, 0, 0.778);
+            background-color: black;
+            max-width: 800px;
+            min-width: 320px;
             margin: auto;
+    
             background-image: url(imagens/fundo-madeira.jpg);
-            position: relative;
-            background-size: cover;
             background-repeat: no-repeat;
+            background-size: 100% 100%;
             background-attachment: fixed;
-        
         }
-        div > iframe{
-            position: absolute;
-            top: 50%;
-            left:50%;
-            transform: translate(-43%,-50%); 
-
-        }
-        
-        iframe { 
-            background-image: url(imagens/frame-iphone.png);
-            height: 440px;
-            width: 220px;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
-        .menu {
-            height: 40px;
-            width: 40px;
+        .link {
+           
             border: 1px solid black;
             border-radius: 50px;
-            margin-bottom: 15px;
+            width: 50px;
+            height: 50px;
+            margin-top: 10px;
+           
         }
-        .menu:hover{
-            border: 1px solid white;
-            transition: 1s;
-
-        }
+      
         #home {
             background-image: url(imagens/logo-home.jpg);
             background-size: cover;
         }
-        #youtube {
+        #you {
             background-image: url(imagens/logo-youtube.jpg);
             background-size: cover;
         }
-        #github {
+        #hub {
             background-image: url(imagens/logo-github.jpg);
             background-size: cover;
         }
-        #insta {
+        #inst {
             background-image: url(imagens/logo-instagram.jpg);
             background-size: cover;
         }
@@ -66,44 +50,32 @@
             background-image: url(imagens/logo-twitter.jpg);
             background-size: cover;
         }
-        #facebook {
+        #fc {
             background-image: url(imagens/logo-facebook.jpg);
             background-size: cover;
         }
-        
-        
+        iframe{
+           
+            width: 300px;
+            height: 500px;
+            
+        }
+       
+       
     </style>
 </head>
 <body>
-    <nav>
-        <div class="menu" id="home">
-            
-        </div>
-        <div class="menu" id="youtube">
-
-        </div>
-        <div class="menu" id="github">
-
-        </div>
-        <div class="menu" id="insta">
-
-        </div>
-        <div class="menu" id="tw">
-
-        </div>
-        <div class="menu" id="facebook">
-
-        </div>
+    <nav class="link">
+        <div class="link" id="home"><a href=""></a></div>
+        <div class="link" id="you"> <a href="imagens/tela-youtube.png" target="tela"></a></div>
+        <div class="link" id="hub"> <a href=""></a></div>
+        <div class="link" id="inst"><a href=""></a></div>
+        <div class="link" id="tw">  <a href=""></a></div>
+        <div class="link" id="fc">  <a href=""></a></div>
     </nav>
-
-    <div>
-        
-           <iframe src="" frameborder="0"></iframe>
-        
-    </div>
+   
     
+            <iframe  srcdoc= <img=''</iframe>
 
-
-    
 </body>
 </html>
