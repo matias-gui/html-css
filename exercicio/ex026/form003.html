@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            background-color: rgb(30, 54, 54);
+        }
+        h1, h2 {
+            text-align: center;
+            color: white;
+        }
+        h2 {
+            margin: 1px 0px 40px 0px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        main {
+            background-color: rgb(57, 64, 71);
+            height: 300px;
+            width: 400px;
+            padding: 30px;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.285);
+        }
+        p{
+            text-align: left;
+            color: white;
+            font-family:Arial, Helvetica, sans-serif;
+           
+           
+        }
+        .buttom {
+            margin: 50px 0px 0px 0px;
+            text-align: center;
+    
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <h1>
+        Teste de Formulário
+    </h1>
+    <main>
+        <h2>
+            Agendamento de Prova
+        </h2>
+        <form action="cadastro.php" autocomplete="on">   
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required autocomplete="name" maxlength="30" placeholder="Nome completo">
+            </p>
+            <p>
+                <label for="iletivo">Periodo Letivo:</label>
+                <input type="month" name="Letivo" id="iletivo" required>
+            </p>
+            <p>
+                <label for="idia">Dia da Prova:</label>
+                <input type="date" name="dia" id="idia" required >
+            </p>
+            <p>
+                <label for="ihora">Horário da Prova:</label>
+                <input type="time" name="hora" id="ihora" required>
+            </p>
+            <p>
+                <label for="inota">Estimativa de Nota:</label>
+                <input type="number" name="nota" id="inota" required min="0" max="10"
+                step="0.1" value="5">
+            </p>
+            <p class="buttom">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+
+
+
+        </form>
+    </main>
+    
+</body>
+</html>
