@@ -6,23 +6,26 @@
     <title>Formulário</title>
 </head>
 <body>
-    <form action="cadastro.php">
+    <form action="cadastro.php" method="get" autocomplete="on">
         <p>
             <label for="iano">Em que ano voçê nasceu:</label>
-            <input type="number" name="ano" id="iano" required min="1950" max="2024" oninput="calcIdade">
+            <input type="number" name="ano" id="iano" min="1970" max="2024" oninput="calcidade" >
         </p>
         <p>
-            <label for="ida">Sua idade:</label>
-            <output id="ida">0</output>
+            <label for="iida">Sua idade:</label>
+            <output id="iida">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </p>
     </form>
+
     <script>
-        function calcIdade () {
-            let atual = new Date().getFullYear()
-            ida.innerHTML = Number(atual) - Number (iano.value)
-        }
-
-
+       function calcidade(){
+        let atual = new Date().getFullYear();
+        iida.innerHTML = Number(atual) - Number(iano.value)
+       }       
     </script>
     
 </body>
