@@ -1,0 +1,28 @@
+@charset "UTF-8" ;
+
+/* Para Impressora*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.3em;
+    font-size: 1.3em;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    margin:20px 0px 20px 0px;
+}
+h2{
+    text-indent: 40px;
+    margin-bottom: 15px;
+}
+
+menu {
+    display: none;
+}
