@@ -7,32 +7,37 @@
     <style>
         div.container{
             display: flex;
-            background-color: rgb(16, 14, 14);
+            background-color: rgba(16, 14, 14, 0.458);
             flex-flow: row wrap;
+            height: 300px;
+            justify-content: space-evenly;
+           
             
         }
 
         div.item{
-            background-color: rgb(16, 123, 217);
-            color: aliceblue;
+            background-color: rgba(255, 255, 255, 0.564);
+            color: black;
             border: 1px solid black;
             text-align: center;
             padding: 20px;
         }
         #i1{
-            order: 5;
+          align-self: center; 
         }
         #i2{
-            order: 0;
+            align-self: stretch;
+            padding: 30px;
         }
         #i3{
-            order: 5;
+           align-self: center;
         }
         #i4{
-            order: 8;
+            align-self: stretch;
+            padding: 30px;
         }
         #i5{
-            order: 9;
+            align-self: center;
         }
     </style>
 </head>
